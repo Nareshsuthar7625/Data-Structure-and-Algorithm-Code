@@ -7,8 +7,8 @@ int binary_search(int* a,int n , int x){
     while(high>=low){
         mid = (low+high)/2;
         if(x == a[mid]) return mid+1;
-        if(x >= a[mid]) low = mid + 1;
-        if(x <= a[mid]) high = mid - 1;
+        if(x > a[mid]) low = mid + 1;
+        if(x < a[mid]) high = mid - 1;
     }
     return -1;
 }
